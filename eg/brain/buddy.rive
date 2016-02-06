@@ -120,6 +120,9 @@
 
 
 // Music
+//
+
+
 // User wants to go to a concert
 + i want to (see|go to) a concert
 - Great, what kind of music? (reply '')
@@ -131,6 +134,11 @@
 // Genres rock
 + rock
 - Rock on, like metal or like soft stuff?
+
+// Genre wildcard
++ (@genre)
+- Tickets are $12.93. Would you like to use card ending in 2352?
+
 
 // Genres Rap
 + rap
@@ -213,9 +221,10 @@
 + yes
 - Great, Should we use your card ending in 4325?
 
-
-
 ! array colors = red blue green yellow
+
+! array relaxation = massage floatation float
 ! array genre = metal hiphop alternative rap pop dance edm
 ! array sports = baseball basketball hockey soccer golf tennis
-^ skateboarding longboarding surfing bodyboarding \n
+^ skateboarding longboarding surfing bodyboarding rock[-]climbing\n
+^ skiing snowboarding \n
