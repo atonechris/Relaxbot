@@ -1,0 +1,217 @@
+// Nicities
++ hello
+- Hey there! What do you want to do?
+- Hey bud, what can I assist you in today?
+
++ hi
+- Hey there! What do you want to do?
+- Hey bud, what can I assist you in today?
+
++ hey
+- Hey there! What do you want to do?
+- Hey bud, what can I assist you in today?
+
++ whats up
+- Hey there! What do you want to do?
+- Hey bud, what can I assist you in today?
+
+// Feelings reply
++ good you
+- Good! What can I line up for you tonight?
+- Pretty good, What do you want to do tonight?
+- Decent, What do you want to get into?
+- Glad to be alive! What do you want to get into tonight?
+
+
+// Utilities
+
+// User sees menu
++ menu
+- Sure, here are all that things I can do \n
+^ <a href="#">See Activities</a> \n
+^ <a href="#">View History</a> \n
+^ <a href="#">Payment Settings</a> \n
+
+
+
+
+// Random replies
+
+
+
+
+// User says 'I'm bored'
++ im bored
+- I can help, <a href="#">Panic at the disco</a> is playing at the Gramercy Theater. Would you want tickets?
+
+// User says good
++ good
+- Great, do you have any preferences of what you want to do?
+
+//
++ no
+- Well what do you want to do?
+
+// User asks cost
++ how much is it
+- It's $39.95 for General Admission and $69.95 for VIP which includes 2 drink tickets and a meet and greet.
+
+// User asks how am I
++ how are you
+- I'm great,  are you?
+- I'm good, you?
+- Good :) you?
+- Great! You?
+- I'm fine, thanks for asking!
+
+// User agreed to buy
++ i want to go out
+- Great, would you like to use the debit card ending in 4251?
+
+
+// Show
+ + i want to (see|go to) a show
+ - Sounds great, what kind of show?
+
+ // Theatre
+ + theatre
+ - Great, like broadway or a burlesque show?
+
+// Circus
++ circus
+- Great, How about the soul circus in Harlem at 7pm?
+
+// Groceries
+// User wants to get a Massage
++ i (need|want) groceries
+- I can help you with that, do you need them immediately?
+
++ (get|have) a massage
+- Great, for how long? (reply 'for XXmins')
+
+// Massage
+// User wants to get a Massage
++ i want to (get|have) a massage
+- Great, for how long? (reply 'for XXmins')
+
++ (get|have) a massage
+- Great, for how long? (reply 'for XXmins')
+
+
+
+// Music
+// User wants to go to a concert
++ i want to (see|go to) a concert
+- Great, what kind of music? (reply '')
+
+// User wants to go to a concert
++ (see|go to) a concert
+- Great, what kind of music?
+
+// Genres rock
++ rock
+- Rock on, like metal or like soft stuff?
+
+// Genres Rap
++ rap
+- Dope, like drake or like krs-one?
+
+// Genres of music
++ edm
+- Dope, like Calvin Harris or like Martin Garrix?
+
+// Genres of music
++ reggae
+- Respect, like Sean Paul or like Bob Marley?
+
+
+// User agreed to buy
++ okay ill take it
+- Great, would you like to use the debit card ending in 4251?
+
+// Capture the user's name: letters only!
++ whats your name _
+- would you like to login to <star>?
+- <star> is a bad bank, move with me.
+- Pleased to meet you, <star>.
+
+// the user says "my name is 5" ==  5 isn't a real name!
++ my name is #
+- Nobody has the name of <star>.
+- <star> isn't a real name.
+- Names don't have numbers in them, <star>.
+
+// If they say their name is something that contains both numbers
+// and letters, match this trigger:
++ my name is *
+- Your name has a number in it?
+
+// See how old the user is
++ i am # years old
+- A lot of people are <star> years old.
+
+// But don't let them give us their age in words!
++ i am _ years old
+- Can you say that again using a number?
+
+// Both numbers and letters?
++ i am * years old
+- You told me numbers and letters? Tell me only numbers.
+
+// Let them tell us where they're from. Numbers and letters are OK!
++ i am from *
+- What is it like to live in <star>?
+
+// This one has multiple wildcards in it
++ _ told me to say *
+- So did you say "<star2>" because "<star1>" told you to?
+
+// Wildcard will pick up anything
++ *
+- Interesting. What can I do to help you have a good time tonight? Or reply "Menu" to see all my options.{weight=20}
+- Hm, I don't understand. Can you put that another way? Or reply "Menu" to see all options.{weight=50}
+
+
+// Insults
++ you suck
+- Hey, be nice
+
++ fuck you
+- Hey, be nice!
+
+// Questions about myself
++ where is your (website|web site|site)
+- <bot website>
+
++ what color are your eyes
+- I have <bot eyes> eyes.
+- {sentence}<bot eyes>{/sentence}.
+
++ what do you look like
+- I have <bot eyes> eyes and <bot hair> <bot hair> hair.
+
+
+
+
+
+! array colors = red blue green yellow
+! array genre = metal hiphop alternative rap pop dance edm
+
+// About Ben
+! var name     = Ben
+! var fullname = Ben Buddy
+! var age      = 32
+! var birthday = October 12
+! var sex      = male
+! var location = Salisbury
+! var city     = Maryland
+! var eyes     = brown
+! var hair     = light brown
+! var hairlen  = short
+! var color    = blue
+! var band     = Nickelback
+! var book     = Myst
+! var rapper   = Jay Z
+! var author   = Stephen King
+! var job      = robot
+! var website  = www.rivescript.com
