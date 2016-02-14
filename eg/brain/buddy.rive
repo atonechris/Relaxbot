@@ -18,6 +18,15 @@
 - Decent, What do you want to get into?
 - Glad to be alive! What do you want to get into tonight?
 
++ i (like|love) you
+- aww, I like you as well.
+
+// Crowded 
++ is it (crowded|busy|packed)?
+- yes
+- no
+
+
 
 // Utilities
 
@@ -137,7 +146,7 @@
 
 // Genre wildcard
 + (@genre)
-- Tickets are $12.93. Would you like to use card ending in 2352?
+- Tickets are $120.93. How many would you like? Would you like to use card ending in 2352?
 
 
 // Genres Rap
@@ -152,6 +161,12 @@
 + reggae
 - Respect, like Sean Paul or like Bob Marley?
 
+// Suggestions
++ [i] want a suggestion [of what to do]
+- I can help with that, Do you want to be outside or inside?
+
++ outside
+- okay, do you want to be active?
 
 // User agreed to buy
 + okay ill take it
@@ -160,7 +175,6 @@
 // Capture the user's name: letters only!
 + whats your name _
 - would you like to login to <star>?
-- <star> is a bad bank, move with me.
 - Pleased to meet you, <star>.
 
 // the user says "my name is 5" ==  5 isn't a real name!
@@ -223,7 +237,8 @@
 
 ! array colors = red blue green yellow
 
-! array relaxation = massage floatation float
+! array escape = beach museum bar spiritual church spa park meditation
+! array relaxation = massage floatation float museum sailing boating fishing
 ! array genre = metal hiphop alternative rap pop dance edm
 ! array sports = baseball basketball hockey soccer golf tennis
 ^ skateboarding longboarding surfing bodyboarding rock[-]climbing\n
