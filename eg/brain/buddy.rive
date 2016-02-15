@@ -11,6 +11,13 @@
 + whats up
 - Hey there! What do you want to do?
 
+// Actions
+
++ go (@relaxation)
+- When do you want go?
+
+
+
 // Feelings reply
 + good you
 - Good! What can I line up for you tonight?
@@ -21,8 +28,8 @@
 + i (like|love) you
 - aww, I like you as well.
 
-// Crowded 
-+ is it (crowded|busy|packed)?
+// Crowded
++ is it (crowded|busy|packed)
 - yes
 - no
 
@@ -172,21 +179,7 @@
 + okay ill take it
 - Great, would you like to use the debit card ending in 4251?
 
-// Capture the user's name: letters only!
-+ whats your name _
-- would you like to login to <star>?
-- Pleased to meet you, <star>.
 
-// the user says "my name is 5" ==  5 isn't a real name!
-+ my name is #
-- Nobody has the name of <star>.
-- <star> isn't a real name.
-- Names don't have numbers in them, <star>.
-
-// If they say their name is something that contains both numbers
-// and letters, match this trigger:
-+ my name is *
-- Your name has a number in it?
 
 // See how old the user is
 + i am # years old
@@ -232,11 +225,57 @@
 - I have <bot eyes> eyes and <bot hair> <bot hair> hair.
 
 
+// When
+
++ today
+- okay, let me check availibility...
+
++ tomorrow
+@ today
+
+//    Days of the week
+
++ monday
+@ today
+
++ tuesday
+@ today
+
++ wednesday
+@ today
+
++ thursday
+@ today
+
++ friday
+@ today
+
++ saturday
+@ today
+
++ sunday
+@ today
+
+//    Weeks
+
++ next week
+- Which day?
+
++ two weeks from now
+@ next week
+
++ my name is *
+- <set name=<star>>It's nice to meet you, <get name>.
+
+
++ can you (@exercise)
+- can you?
+
 + yes
 - Great, Should we use your card ending in 4325?
 
 ! array colors = red blue green yellow
-
+! array exercise = run bike swim job lift exercise kayak
 ! array escape = beach museum bar spiritual church spa park meditation
 ! array relaxation = massage floatation float museum sailing boating fishing
 ! array genre = metal hiphop alternative rap pop dance edm
