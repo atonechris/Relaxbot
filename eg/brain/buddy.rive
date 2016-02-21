@@ -1,38 +1,12 @@
-// Nicities
-+ hello
-- Hey there! What do you want to do?
 
-+ hi
-- Hey there! What do you want to do?
-
-+ hey
-- Hey there! What do you want to do?
-
-+ whats up
-- Hey there! What do you want to do?
-
-// Actions
-
-+ go (@relaxation)
-- When do you want go?
-
-
-
-// Feelings reply
-+ good you
-- Good! What can I line up for you tonight?
-- Pretty good, What do you want to do tonight?
-- Decent, What do you want to get into?
-- Glad to be alive! What do you want to get into tonight?
 
 + i (like|love) you
 - aww, I like you as well.
 
 // Crowded
 + is it (crowded|busy|packed)
-- yes
-- no
-
+- yes {weight=30}
+- no {weight=70}
 
 
 // Utilities
@@ -77,8 +51,6 @@
 // Floatation Tank
  + i want to float
  - In a floatation tank?
-
-
 
 // Show
  + i want to (see|go to) a show
