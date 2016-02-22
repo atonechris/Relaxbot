@@ -1,4 +1,9 @@
-# RiveScript-JS
+# Buddy Ben
+
+## WHAT IS IT
+
+Buddy Ben is a chatbot that will suggest things to do when you get bored. 
+
 
 ## INTRODUCTION
 
