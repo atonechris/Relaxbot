@@ -65,14 +65,9 @@ var rs = new RiveScript({
 
 // Load our files from the brain/ folder.
 rs.loadFile([
-	"brain/begin.rive",
-	"brain/admin.rive",
-	"brain/clients.rive",
-	"brain/eliza.rive",
-	"brain/myself.rive",
-	"brain/buddy.rive",
-	"brain/rpg.rive",
-	"brain/javascript.rive"
+	"../brain/buddy.rive",
+	"../brain/onboarding.rive",
+	"../brain/javascript.rive"
 	], on_load_success, on_load_error);
 
 // You can register objects that can then be called
@@ -102,7 +97,7 @@ function sendMessage () {
 	try {
 	var reply = rs.reply("soandso", text);
 	reply = reply.replace(/\n/g, "<br>");
-	$("#dialogue").append("<div><span class='bot'>Bot:</span> " + reply + "</div>");
+	$("#dialogue").append("<div><span class='bot'>Buddy:</span> " + reply + "</div>");
 	$("#dialogue").animate({ scrollTop: $("#dialogue").height() }, 1000);
 	} catch(e) {
 		window.alert(e.message + "\n" + e.line);
