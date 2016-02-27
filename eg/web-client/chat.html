@@ -1,37 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>RiveScript-JS</title>
+<title>Al - The end of bore·dom</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="chat.css">
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="datadumper.js"></script>
 <script type="text/javascript" src="../lib/rivescript.js"></script>
 </head>
 <body>
-
-<h1>Chat</h1>
-
-<fieldset>
+<div id="container">
+<h1>Al</h1>
+<p>The chatbot that will suggest, books, and pays for the best activities around you right now.</p>
+<fieldset class="chatWindow">
 	<legend>Chat Log</legend>
-	<div id="dialogue"></div>
+	<div id="dialogue" ></div>
 </fieldset>
 
 <form onSubmit="return sendMessage()">
-	<fieldset>
-		<legend>Send a Message</legend>
 
 		<table class="input-table">
 			<tr>
-				<td class="text-box">
-					<input type="text" size="40" name="message" id="message" autocomplete="off" disabled placeholder="Please wait... loading...">
+				<td class="text-box underline">
+					<input type="text" size="40" name="message" id="message"  autocomplete="off" disabled placeholder="Please wait... loading...">
 				</td>
 				<td class="send-button">
-					<input type="submit" value="Send">
+					<input type="submit" value="Send" class="styled-button-8" >
 				</td>
 			</tr>
 		</table>
-	</fieldset>
 </form>
 
 <fieldset>
@@ -43,7 +41,7 @@
 
 	<div id="debug"></div>
 </fieldset>
-
+</div>
 <script type="text/javascript">
 // Handle the debug mode query string parameter.
 var debugMode = false;
@@ -97,7 +95,7 @@ function sendMessage () {
 	try {
 	var reply = rs.reply("soandso", text);
 	reply = reply.replace(/\n/g, "<br>");
-	$("#dialogue").append("<div><span class='bot'>Buddy:</span> " + reply + "</div>");
+	$("#dialogue").append("<div><span class='bot'>Al:</span> " + reply + "</div>");
 	$("#dialogue").animate({ scrollTop: $("#dialogue").height() }, 1000);
 	} catch(e) {
 		window.alert(e.message + "\n" + e.line);
