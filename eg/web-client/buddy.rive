@@ -141,10 +141,7 @@
 - <star> isn't a real name.
 - Names don't have numbers in them, <star>.
 
-// If they say their name is something that contains both numbers
-// and letters, match this trigger:
-+ my name is *
-- Your name has a number in it?
+
 
 // See how old the user is
 + i am # years old
